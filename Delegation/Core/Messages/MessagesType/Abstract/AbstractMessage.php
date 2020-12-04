@@ -14,17 +14,7 @@ abstract class AbstractMessage implements MessageInterface
         return $this;
     }
 
-    public function send(): string
-    {
-        if (!empty($this->setMessage($this->message))) {
-            return "Success no errors";
-        }
+    public function send(): mixed { return 'Success send 200|OK';}
 
-        return $this->error();
-    }
-
-    public function error(): Exception
-    {
-        throw new Exception("Message not found!");
-    }
+    public function error(): mixed { throw new Exception('Sorry not correct Data...');}
 }

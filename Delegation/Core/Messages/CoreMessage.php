@@ -14,7 +14,7 @@ class CoreMessage implements MessageInterface
         $this->sendBySms();
     }
 
-    public function send(): string
+    public function send(): mixed
     {
         return $this->prepareMessage->send();
     }
@@ -26,14 +26,14 @@ class CoreMessage implements MessageInterface
         return $this->prepareMessage;
     }
 
-    public function sendByEmail()
+    public function sendByEmail(): CoreMessage
     {
         $this->prepareMessage = new EmailMessage();
 
         return $this;
     }
 
-    public function sendBySms()
+    public function sendBySms(): CoreMessage
     {
         $this->prepareMessage = new SmsMessage();
 

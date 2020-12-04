@@ -11,7 +11,7 @@ $coreMessage->setMessage('Hello From SMS')
 var_dump($coreMessage);
 
 $coreMessage->sendByEmail()
-            ->setMessage('Hello From Email')
+            ->setMessage('')
             ->send();
 var_dump($coreMessage);
 
