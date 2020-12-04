@@ -1,6 +1,6 @@
 <?php
 
-require_once "Abstract/AbstractMessage.php";
+require_once __DIR__ . "/Abstract/AbstractMessage.php";
 
 class SmsMessage extends AbstractMessage
 {

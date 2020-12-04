@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/PHP-Patterns/Delegation/Core/Messages/MessagesType/Abstract/AbstractMessage.php";
+require_once __DIR__ . "/Abstract/AbstractMessage.php";
 
 class EmailMessage extends AbstractMessage
 {
