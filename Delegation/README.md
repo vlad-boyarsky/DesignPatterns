@@ -1,6 +1,6 @@
-#Delegation
+<h2>Delegation</h1>
 
-!WARRNING!
+<h3>!WARRNING!</h3>
 <ul>
 <li>😁</li>
 </ul>
