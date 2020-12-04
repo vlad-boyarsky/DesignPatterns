@@ -4,7 +4,6 @@ require "MessagesType/Interfaces/MessageInterface.php";
 require "MessagesType/SmsMessage.php";
 require "MessagesType/EmailMessage.php";
 
-
 class CoreMessage implements MessageInterface
 {
 
