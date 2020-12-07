@@ -13,15 +13,17 @@ class ShopEventChannel implements ShopEventChannelInterface
         }
 
         foreach ($this->products[$product] as $subscriberProduct) {
-            $subscriberProduct->notify($data);
+            echo $subscriberProduct->notify($data);
         }
+
+        return "Done ....";
     }
 
     public function subscribe($product, SubscriberInterface $subscriber)
     {
         $this->products[$product][] = $subscriber;
 
-        $info = $subscriber->getName() . "subscribe on" . $product . "[" . date('Y-m-d H:i:s') . "]";
+        $info = $subscriber->getName() . " subscribe on " . "'" . $product . "'" . " [" . date('Y-m-d H:i:s') . "]";
 
         echo $info;
     }

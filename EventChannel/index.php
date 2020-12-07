@@ -14,8 +14,8 @@ $axelSubscriber = new Subscriber('Axel');
 $alexSubscriber = new Subscriber('Alex');
 $ronSubscriber = new Subscriber('Ron');
 
-echo $shopEventChannel->subscribe($sandoraJuice, $axelSubscriber);
-echo $shopEventChannel->subscribe($richJuice, $alexSubscriber);
-echo $shopEventChannel->subscribe($wellDoneJuice, $ronSubscriber);
+//$shopEventChannel->subscribe($sandoraJuice, $axelSubscriber);
+//$shopEventChannel->subscribe($richJuice, $alexSubscriber);
+echo $shopEventChannel->subscribe('Orange Juice', $ronSubscriber) . "<br>";
 
-echo $sandoraJuice->publish('Orange Juice');
+echo $sandoraJuice->publish('We have new Orange Juice') . "<br>";
