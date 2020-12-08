@@ -3,7 +3,7 @@
 
 interface ShopEventChannelInterface
 {
-    public function publish(string $product, $data);
+    public function publish(string $product, string $data);
 
-    public function subscribe($product, SubscriberInterface $subscriber);
+    public function subscribe(string $product, SubscriberInterface $subscriber);
 }

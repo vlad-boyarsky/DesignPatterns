@@ -3,7 +3,7 @@
 
 interface SubscriberInterface
 {
-    public function notify($data);
+    public function notify($data): string;
 
-    public function getName();
+    public function getName(): string;
 }

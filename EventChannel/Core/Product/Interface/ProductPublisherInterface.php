@@ -3,5 +3,5 @@
 
 interface ProductPublisherInterface
 {
-    public function publish($data);
+    public function publish(string $data): void;
 }
