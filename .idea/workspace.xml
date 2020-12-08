@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="634c3986-a059-49b7-8914-74af6d805065" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventChannel/Core/Product/Interface/ProductPublisherInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/EventChannel/Core/Product/Interface/ProductPublisherInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventChannel/Core/Product/ProductPublisher.php" beforeDir="false" afterPath="$PROJECT_DIR$/EventChannel/Core/Product/ProductPublisher.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventChannel/Core/Shop/Interface/ShopEventChannelInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/EventChannel/Core/Shop/Interface/ShopEventChannelInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventChannel/Core/Shop/ShopEventChannel.php" beforeDir="false" afterPath="$PROJECT_DIR$/EventChannel/Core/Shop/ShopEventChannel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventChannel/Core/Subscriber/Interface/SubscriberInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/EventChannel/Core/Subscriber/Interface/SubscriberInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventChannel/Core/Subscriber/Subscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/EventChannel/Core/Subscriber/Subscriber.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventChannel/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/EventChannel/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,7 @@
       <updated>1607429049419</updated>
       <workItem from="1607429057298" duration="371000" />
       <workItem from="1607429549767" duration="1342000" />
-      <workItem from="1607433465165" duration="587000" />
+      <workItem from="1607433465165" duration="822000" />
     </task>
     <servers />
   </component>

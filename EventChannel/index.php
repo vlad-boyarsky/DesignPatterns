@@ -19,5 +19,5 @@ echo $shopEventChannel->subscribe('Rich Juice', $alexSubscriber) . "<br>";
 echo $shopEventChannel->subscribe('Well Done Juice', $ronSubscriber) . "<br>";
 echo "<br>";
 echo $sandoraJuice->publish('We have new Orange Juice') . "<br>";
-echo $richJuice->publish('We have new Orange Juice') . "<br>";
-echo $wellDoneJuice->publish('We have new Orange Juice') . "<br>";
+echo $richJuice->publish('We have new Apple Juice') . "<br>";
+echo $wellDoneJuice->publish('We have new Coconut Juice') . "<br>";

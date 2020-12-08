@@ -20,4 +20,5 @@ class ProductPublisher implements ProductPublisherInterface
     {
         $this->eventChannel->publish($this->product, $data);
     }
+
 }

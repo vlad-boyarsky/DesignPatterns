@@ -1,9 +1,8 @@
 <?php
 
-
 interface SubscriberInterface
 {
-    public function notify($data): string;
+    public function notify($data): void;
 
     public function getName(): string;
 }

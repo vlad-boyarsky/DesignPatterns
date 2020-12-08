@@ -12,7 +12,7 @@ class Subscriber implements SubscriberInterface
         $this->name = $name;
     }
 
-    public function notify($data): string
+    public function notify($data): void
     {
         $message = $this->getName() . " notified about " . $data;
 
@@ -23,4 +23,5 @@ class Subscriber implements SubscriberInterface
     {
         return $this->name;
     }
+
 }
