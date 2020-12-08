@@ -14,7 +14,13 @@ abstract class AbstractMessage implements MessageInterface
         return $this;
     }
 
-    public function send(): mixed { return 'Success send 200|OK';}
+    public function send(): mixed
+    {
+        return 'Success send 200|OK';
+    }
 
-    public function error(): mixed { throw new Exception('Sorry not correct Data...');}
+    public function error(): mixed
+    {
+        throw new Exception('Sorry not correct Data...');
+    }
 }
