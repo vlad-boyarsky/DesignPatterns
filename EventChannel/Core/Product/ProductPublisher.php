@@ -1,7 +1,6 @@
 <?php
 
 require_once __DIR__ . '/Interface/ProductPublisherInterface.php';
-require_once __FILE__ . '';
 
 class ProductPublisher implements ProductPublisherInterface
 {

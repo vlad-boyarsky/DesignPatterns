@@ -4,19 +4,13 @@ require_once __DIR__ . '/Interface/ShopEventChannelInterface.php';
 
 class ShopEventChannel implements ShopEventChannelInterface
 {
-    private array $products = [];
+    private $products = [];
 
-    public function publish($product, $data)
+    public function publish(string $product, $data)
     {
-        if (empty($this->products[$product])) {
-            return "Product not found";
-        }
-
         foreach ($this->products[$product] as $subscriberProduct) {
-            echo $subscriberProduct->notify($data);
+            $subscriberProduct->notify($data);
         }
-
-        return "Done ....";
     }
 
     public function subscribe($product, SubscriberInterface $subscriber)
