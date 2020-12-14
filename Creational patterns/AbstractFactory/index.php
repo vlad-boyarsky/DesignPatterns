@@ -7,11 +7,3 @@ $modeStyle = $styleConfig->getStyleFactory('dark');
 
 $modeStyle->includeBorderColorStyle()->build();
 $modeStyle->includeBackroundColorStyle()->build();
-
-//$colorConfig->includeBorderColorStyle()->build();
-//$colorConfig->includeBackroundColorStyle()->build();
-
-
-
-//$colorModeVersion = new LightVersionFactory();
-//$colorModeVersion->includeLightMode()->build();
