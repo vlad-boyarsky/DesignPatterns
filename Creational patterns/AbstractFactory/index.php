@@ -3,7 +3,12 @@
 require_once __DIR__ . '/StyleConfigFactory.php';
 
 $styleConfig = new StyleConfigFactory;
-$modeStyle = $styleConfig->getStyleFactory('dark');
+$modeStyle = $styleConfig->getStyleFactory('light');
 
-$modeStyle->includeBorderColorStyle()->build();
-$modeStyle->includeBackroundColorStyle()->build();
+$modeStyle
+    ->includeBorderColorStyle()
+    ->build();
+
+$modeStyle
+    ->includeBackroundColorStyle()
+    ->build();
