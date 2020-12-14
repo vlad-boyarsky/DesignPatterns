@@ -3,7 +3,7 @@
 
 interface StyleConfigFactoryInterface
 {
-    public function includeBoxStyle(): BorderColorInterface;
+    public function includeBorderColorStyle(): BorderColorInterface;
 
-    public function includeColorStyle(): BackgroundColorInterface;
+    public function includeBackroundColorStyle(): BackgroundColorInterface;
 }

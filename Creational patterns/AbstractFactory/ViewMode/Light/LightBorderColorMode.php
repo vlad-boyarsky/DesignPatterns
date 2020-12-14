@@ -1,7 +1,7 @@
 <?php
 
 
-class BorderColorMode implements BorderColorInterface
+class LightBorderColorMode implements BorderColorInterface
 {
 
     public function build()

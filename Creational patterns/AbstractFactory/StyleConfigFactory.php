@@ -1,18 +1,18 @@
 <?php
 
-require_once dirname(__DIR__, 1) . '/AbstractFactory/Factories/ViewMode/BackgroundBackgroundColor.php';
-require_once dirname(__DIR__, 1) . '/AbstractFactory/Factories/ViewMode/BorderColorMode.php';
+require_once dirname(__DIR__, 1) . '/AbstractFactory/Factories/DarkVersionFactory.php';
+require_once dirname(__DIR__, 1) . '/AbstractFactory/Factories/LightVersionFactory.php';
 
 class StyleConfigFactory
 {
     protected StyleConfigFactoryInterface $factory;
 
-    public function getColorFactory($color): StyleConfigFactoryInterface
+    public function getStyleFactory($color): StyleConfigFactoryInterface
     {
         if ($color === 'light') {
-            $factory = (new ColorVersionFactory());
+            $factory = new LightVersionFactory();
         } elseif ($color === 'dark') {
-            $factory = new BorderColorMode();
+            $factory = new DarkVersionFactory();
         } else {
             throw new Exception('Not correct mode color...');
         }

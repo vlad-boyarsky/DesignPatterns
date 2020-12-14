@@ -2,9 +2,11 @@
 
 require_once __DIR__ . '/StyleConfigFactory.php';
 
-$colorConfig = new StyleConfigFactory();
-$factory = $colorConfig->getColorFactory('dark');
+$colorConfig = (new StyleConfigFactory())->getStyleFactory('light');
+$colorConfig->includeBorderColorStyle()->build();
+$colorConfig->includeBackroundColorStyle()->build();
 
-$factory->build();
-//$colorModeVersion = new ColorVersionFactory();
+
+
+//$colorModeVersion = new LightVersionFactory();
 //$colorModeVersion->includeLightMode()->build();

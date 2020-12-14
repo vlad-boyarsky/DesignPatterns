@@ -1,7 +1,7 @@
 <?php
 
 
-class BackgroundBackgroundColor implements BackgroundColorInterface
+class DarkBackgroundColorMode implements BackgroundColorInterface
 {
 
     public function build()
