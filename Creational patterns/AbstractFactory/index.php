@@ -1,6 +1,11 @@
 <?php
 
-require_once __DIR__ . '/Factories/ColorVersion/ColorVersionFactory.php';
+require_once __DIR__ . '/ColorVersion/ColorVersionFactory.php';
+require_once __DIR__ . '/ColorConfigFactory.php';
 
-$colorModeVersion = new ColorVersionFactory();
-$colorModeVersion->includeLightMode()->build();
+$colorConfig = new ColorConfigFactory();
+$factory = $colorConfig->getColorFactory('dark');
+
+$factory->build();
+//$colorModeVersion = new ColorVersionFactory();
+//$colorModeVersion->includeLightMode()->build();

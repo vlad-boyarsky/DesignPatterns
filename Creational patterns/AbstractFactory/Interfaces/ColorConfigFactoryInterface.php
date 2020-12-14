@@ -1,7 +1,7 @@
 <?php
 
 
-interface ColorModeFactoryInterface
+interface ColorConfigFactoryInterface
 {
     public function includeDarkMode(): DarkModeInterface;
 

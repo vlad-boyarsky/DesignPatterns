@@ -6,6 +6,6 @@ class LightMode implements LightModeInterface
 
     public function build()
     {
-        echo "<style>body{background-color: #f3f3f3;}</style>";
+        echo "<style>body{background-color: #eeece9;}</style>";
     }
 }
