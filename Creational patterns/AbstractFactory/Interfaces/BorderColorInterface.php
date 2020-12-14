@@ -1,7 +1,7 @@
 <?php
 
 
-interface LightModeInterface
+interface BorderColorInterface
 {
     public function build();
 }

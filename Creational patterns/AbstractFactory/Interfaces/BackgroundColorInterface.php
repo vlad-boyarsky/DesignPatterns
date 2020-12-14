@@ -1,7 +1,7 @@
 <?php
 
 
-interface DarkModeInterface
+interface BackgroundColorInterface
 {
     public function build();
 }

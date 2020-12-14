@@ -1,22 +1,22 @@
 <?php
 
-require_once dirname(__DIR__, 1) . '/Interfaces/ColorConfigFactoryInterface.php';
-require_once dirname(__DIR__, 1) . '/Interfaces/DarkModeInterface.php';
-require_once dirname(__DIR__, 1) . '/Interfaces/LightModeInterface.php';
-require_once dirname(__DIR__, 1) . '/Factories/ViewColorMode/DarkMode.php';
-require_once dirname(__DIR__, 1) . '/Factories/ViewColorMode/LightMode.php';
+require_once dirname(__DIR__, 1) . '/Interfaces/StyleConfigFactoryInterface.php';
+require_once dirname(__DIR__, 1) . '/Interfaces/BorderColorInterface.php';
+require_once dirname(__DIR__, 1) . '/Interfaces/BackgroundColorInterface.php';
+require_once dirname(__DIR__, 1) . '/Factories/ViewMode/BorderColorMode.php';
+require_once dirname(__DIR__, 1) . '/Factories/ViewMode/BackgroundBackgroundColor.php';
 
 
-class ColorVersionFactory implements ColorConfigFactoryInterface
+class ColorVersionFactory implements StyleConfigFactoryInterface
 {
 
-    public function includeDarkMode(): DarkModeInterface
+    public function includeBoxStyle(): BorderColorInterface
     {
-        return new DarkMode();
+        // TODO: Implement includeBoxMode() method.
     }
 
-    public function includeLightMode(): LightModeInterface
+    public function includeColorStyle(): BackgroundColorInterface
     {
-        return new LightMode();
+        // TODO: Implement includeColorMode() method.
     }
 }

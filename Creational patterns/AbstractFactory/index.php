@@ -1,9 +1,8 @@
 <?php
 
-require_once __DIR__ . '/ColorVersion/ColorVersionFactory.php';
-require_once __DIR__ . '/ColorConfigFactory.php';
+require_once __DIR__ . '/StyleConfigFactory.php';
 
-$colorConfig = new ColorConfigFactory();
+$colorConfig = new StyleConfigFactory();
 $factory = $colorConfig->getColorFactory('dark');
 
 $factory->build();
