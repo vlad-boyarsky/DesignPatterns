@@ -5,5 +5,5 @@ interface StyleConfigFactoryInterface
 {
     public function includeBorderColorStyle(): BorderColorInterface;
 
-    public function includeBackroundColorStyle(): BackgroundColorInterface;
+    public function includeBackgroundColorStyle(): BackgroundColorInterface;
 }

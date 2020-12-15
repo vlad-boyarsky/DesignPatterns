@@ -15,7 +15,7 @@ class DarkVersionFactory implements StyleConfigFactoryInterface
         return new DarkBorderColorMode();
     }
 
-    public function includeBackroundColorStyle(): BackgroundColorInterface
+    public function includeBackgroundColorStyle(): BackgroundColorInterface
     {
         return new DarkBackgroundColorMode();
     }

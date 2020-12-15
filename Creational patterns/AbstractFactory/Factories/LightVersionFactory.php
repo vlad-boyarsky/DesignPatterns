@@ -15,7 +15,7 @@ class LightVersionFactory implements StyleConfigFactoryInterface
         return new LightBorderColorMode();
     }
 
-    public function includeBackroundColorStyle(): BackgroundColorInterface
+    public function includeBackgroundColorStyle(): BackgroundColorInterface
     {
         return new LightBackgroundColorMode();
     }

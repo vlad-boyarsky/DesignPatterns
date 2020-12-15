@@ -10,5 +10,5 @@ $modeStyle
     ->build();
 
 $modeStyle
-    ->includeBackroundColorStyle()
+    ->includeBackgroundColorStyle()
     ->build();
