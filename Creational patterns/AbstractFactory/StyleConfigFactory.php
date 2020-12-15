@@ -10,13 +10,13 @@ class StyleConfigFactory
     public function getStyleFactory($color): StyleConfigFactoryInterface
     {
         if ($color === 'light') {
-            $factory = new LightVersionFactory();
+            $this->factory = new LightVersionFactory();
         } elseif ($color === 'dark') {
-            $factory = new DarkVersionFactory();
+            $this->factory = new DarkVersionFactory();
         } else {
             throw new Exception('Not correct mode color...');
         }
 
-        return $factory;
+        return $this->factory;
     }
 }
