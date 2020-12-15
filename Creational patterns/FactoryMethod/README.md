@@ -1,4 +1,4 @@
-<h1>Abstract Factory</h1>
+<h1>Factory Method</h1>
 
 <h3>!WARRNING!</h3>
 <ul>
