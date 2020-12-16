@@ -1,7 +1,7 @@
 <?php
 
 
-interface DbConnectionInterface
+interface DbInterface
 {
     public function check(): DbCheckInterface;
 
