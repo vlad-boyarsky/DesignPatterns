@@ -1,19 +1,17 @@
 <?php
 
 require_once dirname(__DIR__, 1) . '/Interfaces/DbInterface.php';
-require_once dirname(__DIR__, 1) . '/Interfaces/DbCheckInterface.php';
-require_once dirname(__DIR__, 1) . '/Interfaces/DbConnectInterface.php';
 
 class ReserveDb implements DbInterface
 {
 
-    public function check(): DbCheckInterface
+    public function check(): string
     {
-        // TODO: Implement check() method.
+        return __METHOD__ . " check new DB...\n";
     }
 
-    public function connect(): DbConnectInterface
+    public function connect(): string
     {
-        // TODO: Implement connect() method.
+        return __METHOD__ . " DB connected\n\n";
     }
 }

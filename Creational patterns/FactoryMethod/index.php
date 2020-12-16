@@ -1,10 +1,14 @@
 <?php
 
-function selectConnection(DbInterface $db)
+require_once dirname(__DIR__, 1).'/FactoryMethod/DbFactories/MainDbFactory.php';
+require_once dirname(__DIR__, 1).'/FactoryMethod/DbFactories/ReserveDbFactory.php';
+
+function selectConnection(AbstractDbFactory $db)
 {
-    $db->check();
-    $db->connect();
+   echo $db->build();
 }
 
-selectConnection(new MainDb());
-selectConnection(new ReserveDb());
+echo '<pre>';
+selectConnection(new MainDbFactory());
+selectConnection(new ReserveDbFactory());
+echo '</pre>';

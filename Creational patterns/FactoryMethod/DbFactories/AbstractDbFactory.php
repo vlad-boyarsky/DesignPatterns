@@ -10,8 +10,8 @@ abstract class AbstractDbFactory
     public function build()
     {
         $db = $this->getDb();
-        $checkConnection = $db->check()->run();
-        $connect = $db->connect()->run();
+        $checkConnection = $db->check();
+        $connect = $db->connect();
 
         return $checkConnection . ' ' . $connect;
     }

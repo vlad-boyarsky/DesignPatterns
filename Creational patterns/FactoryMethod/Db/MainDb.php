@@ -1,19 +1,17 @@
 <?php
 
 require_once dirname(__DIR__, 1) . '/Interfaces/DbInterface.php';
-require_once dirname(__DIR__, 1) . '/Interfaces/DbCheckInterface.php';
-require_once dirname(__DIR__, 1) . '/Interfaces/DbConnectInterface.php';
 
 class MainDb implements DbInterface
 {
 
-    public function check(): DbCheckInterface
+    public function check(): string
     {
-        echo __METHOD__ . " check new DB";
+        return __METHOD__ . " check new DB...\n";
     }
 
-    public function connect(): DbConnectInterface
+    public function connect(): string
     {
-        echo __METHOD__ . " DB connected";
+        return __METHOD__ . " DB connected\n\n";
     }
 }

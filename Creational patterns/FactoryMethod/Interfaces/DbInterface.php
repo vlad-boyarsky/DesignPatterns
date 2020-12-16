@@ -3,7 +3,7 @@
 
 interface DbInterface
 {
-    public function check(): DbCheckInterface;
+    public function check(): string;
 
-    public function connect(): DbConnectInterface;
+    public function connect(): string;
 }
