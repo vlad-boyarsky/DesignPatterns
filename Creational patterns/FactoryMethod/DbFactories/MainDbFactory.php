@@ -7,7 +7,7 @@ require_once dirname(__DIR__, 1) . '/Db/MainDb.php';
 class MainDbFactory extends AbstractDbFactory
 {
 
-    function getDb(): DbInterface
+    protected function getDb(): DbInterface
     {
         return new MainDb();
     }
