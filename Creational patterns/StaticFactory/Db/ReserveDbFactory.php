@@ -1,14 +1,17 @@
 <?php
 
-require_once dirname(__DIR__, 1) . '/Db/AbstractDbFactory.php';
-require_once dirname(__DIR__, 1) . '/Db/ReserveDb.php';
+require_once dirname(__DIR__, 1) . '/Interfaces/DataBaseInterface.php';
 
-
-class ReserveDbFactory extends AbstractDbFactory
+class ReserveDbFactory implements DataBaseInterface
 {
-
-    protected function getDb(): DbInterface
+    public function setConnect()
     {
-        return new ReserveDb();
+
     }
+
+    public function connect()
+    {
+        // TODO: Implement connect() method.
+    }
+
 }

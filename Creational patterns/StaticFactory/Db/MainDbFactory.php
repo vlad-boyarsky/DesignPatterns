@@ -1,15 +1,17 @@
 <?php
 
-require_once dirname(__DIR__, 1) . '/Db/AbstractDbFactory.php';
-require_once dirname(__DIR__, 1) . '/Db/MainDb.php';
+require_once dirname(__DIR__, 1) . '/Interfaces/DataBaseInterface.php';
 
-
-class MainDbFactory extends AbstractDbFactory
+class MainDbFactory implements DataBaseInterface
 {
 
-    protected function getDb(): DbInterface
+    public function setConnect()
     {
-        return new MainDb();
+        // TODO: Implement setConnect() method.
     }
 
+    public function connect()
+    {
+        // TODO: Implement connect() method.
+    }
 }

@@ -4,25 +4,20 @@
 class StaticFactory implements DbStaticFactoryInterface
 {
 
-    public static function connect(string $selectDB = 'main'): DbInterface
+    public static function connect(string $selectDB = 'main'): DataBaseInterface
     {
-        $db = new DataBase();
 
          switch($selectDB) {
 
              case 'main':
-                 $db;
+                 $db = new MainDbFactory();
                  break;
              case 'reserve':
-                 $db;
+                 $db = new ReserveDbFactory();
                  break;
              default:
                  echo "No connection to {$selectDB}...";
         }
-
-        $db
-            ->setСonnect()
-            ->connect();
 
          return $db;
     }
