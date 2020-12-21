@@ -3,7 +3,7 @@
 
 interface DataBaseInterface
 {
-    public function setConnect();
+    public function setConnect(): array;
 
-    public function connect();
+    public function connect(): void;
 }

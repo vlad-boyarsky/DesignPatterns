@@ -1,6 +1,9 @@
 <?php
 
+require_once 'StaticFactory.php';
 
-$mainDB = StaticFactory::connect();
-$reserveDB = StaticFactory::connect();
+StaticFactory::connect('reserve');
+
+
+
 

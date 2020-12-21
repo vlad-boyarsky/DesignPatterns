@@ -4,14 +4,21 @@ require_once dirname(__DIR__, 1) . '/Interfaces/DataBaseInterface.php';
 
 class ReserveDbFactory implements DataBaseInterface
 {
-    public function setConnect()
+    protected array $setConnect = [];
+
+    public function setConnect(): array
     {
 
+        $this->setConnect = ['127.0.0.1', '3306', 'localhost'];
+
+        return $this->setConnect;
     }
 
-    public function connect()
+    public function connect(): void
     {
-        // TODO: Implement connect() method.
+        if (!empty($this->setConnect)) {
+            echo 'Connected 200 ' . __METHOD__;
+        }
     }
 
 }
