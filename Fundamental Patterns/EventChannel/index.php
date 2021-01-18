@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/Core/Shop/ShopEventChannel.php';
+require_once __DIR__ . ' /Core/Shop/ShopEventChannel.php';
 require_once __DIR__ . '/Core/Product/ProductPublisher.php';
 require_once __DIR__ . '/Core/Subscriber/Subscriber.php';
 
